@@ -59,16 +59,55 @@ const Footer = () => {
           </div>
           {/* Navlinks */}
           <div className='grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10'>
+            {/* 1st Line */}
             <div>
-              <div>
-                <h1>Important Links</h1>
-                <ul>
+              <div className='py-8 px-4'>
+                <h1 className='text-xl sm:text-3xl font-bold sm:text-left text-justify m-3'>Important Links</h1>
+                <ul className='flex flex-col'>
                   {
                     FooterLinks.map(data=>{
                       return(
                         
-                          <li className='cursor-pointer hover:text-primary duration-300'>
-                            <a href={data.links} target="_blabk">{data.title}</a>
+                          <li key={data.title} className='cursor-pointer hover:text-primary duration-300'>
+                            <a href={data.links} target="_blabk"><span className='mr-2'>&#11162;</span>{data.title}</a>
+                          </li>
+                        
+                      )
+                    })
+                  }
+                </ul>
+              </div>
+            </div>
+            {/* 2nd Line */}
+            <div>
+              <div className='py-8 px-4'>
+                <h1 className='text-xl sm:text-3xl font-bold sm:text-left text-justify m-3'>Important Links</h1>
+                <ul className='flex flex-col'>
+                  {
+                    FooterLinks.map(data=>{
+                      return(
+                        
+                          <li key={data.title} className='cursor-pointer hover:text-primary duration-300'>
+                            <a href={data.links} target="_blabk"><span className='mr-2'>&#11162;</span>{data.title}</a>
+                          </li>
+                        
+                      )
+                    })
+                  }
+                </ul>
+              </div>
+            </div>
+            {/* 3rd Line */}
+            <div>
+              <div className='py-8 px-4'>
+                <h1 className='text-xl sm:text-3xl font-bold sm:text-left text-justify m-3'>Important Links</h1>
+                <ul className='flex flex-col'>
+                  {
+                    FooterLinks.map(data=>{
+                      return(
+                        
+                          <li key={data.title} className='cursor-pointer hover:text-primary duration-300'>
+                            <a href={data.links} target="_blabk"><span className='mr-2'>&#11162;</span>{data.title}</a>
                           </li>
                         
                       )

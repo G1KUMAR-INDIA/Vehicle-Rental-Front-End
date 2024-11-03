@@ -11,7 +11,7 @@ const Navbar = () => {
         }
       }, [darkMode]);
   return (
-    <nav className='shadow-md'>
+    <nav className='shadow-md bg-white dark:bg-dark dark:text-white duration-300 relative z-40'>
       <div className="container">
         <div className="flex justify-between items-center">
             <div>
@@ -19,11 +19,11 @@ const Navbar = () => {
             </div>
             <div className='hidden md:block ju'>
                     <ol className="flex items-center gap-6">
-                        <li to="/home" className='text-red-600 py-3 hover:border-b-2 hover:border hover:text-primary transition-colors duration-500 text-lg font-medium'>HOME</li>
-                        <li to="/about" className='text-red-600 py-3 hover:border-b-2 hover:border hover:text-primary transition-colors duration-500 text-lg font-medium'>ABOUT</li>
-                        <li to="/Vehicles" className='text-red-600 py-3 hover:border-b-2 hover:border hover:text-primary transition-colors duration-500 text-lg font-medium'>VEHICLES</li>
-                        <li to="/bookings" className='text-red-600 py-3 hover:border-b-2 hover:border hover:text-primary transition-colors duration-500 text-lg font-medium'>BOOKINGS</li>
-                        <li to="/login" className='text-red-600 py-3 hover:border-b-2 hover:border hover:text-primary transition-colors duration-500 text-lg font-medium'>LOGIN</li>
+                        <li href="/home" className='text-red-600 py-3 hover:border-b-2 hover:border hover:text-primary transition-colors duration-500 text-lg font-medium'>HOME</li>
+                        <li href="/about" className='text-red-600 py-3 hover:border-b-2 hover:border hover:text-primary transition-colors duration-500 text-lg font-medium'>ABOUT</li>
+                        <li href="/Vehicles" className='text-red-600 py-3 hover:border-b-2 hover:border hover:text-primary transition-colors duration-500 text-lg font-medium'>VEHICLES</li>
+                        <li href="/bookings" className='text-red-600 py-3 hover:border-b-2 hover:border hover:text-primary transition-colors duration-500 text-lg font-medium'>BOOKINGS</li>
+                        <li href="/login" className='text-red-600 py-3 hover:border-b-2 hover:border hover:text-primary transition-colors duration-500 text-lg font-medium'>LOGIN</li>
                     </ol>
             </div>
             <div className='flex'>
