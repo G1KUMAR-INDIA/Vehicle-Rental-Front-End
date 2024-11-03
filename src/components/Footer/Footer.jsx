@@ -4,7 +4,28 @@ import { FaMobile } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
 import { FaMailBulk } from "react-icons/fa";
-FaFacebook
+const FooterLinks=[
+  {
+    title:"Home",
+    link:"/#",
+  },
+  {
+    title:"About",
+    link:"/about",
+  },
+  {
+    title:"Vehicles",
+    link:"/vehicles",
+  },
+  {
+    title:"Bookings",
+    link:"/bookings",
+  },
+  {
+    title:"Login",
+    link:"/login",
+  },
+]
 const Footer = () => {
   return (
     <div className='bg-gray-100 dark:bg-dark mt-14 rounded-t-3xl'>
@@ -24,17 +45,39 @@ const Footer = () => {
               <p>+918501891921</p>              
             </div>
             {/* Social Handles */}
-            <div className='flex items-center gap-3'>
-              <a href="#">
+            <div className='flex items-center  mt-6 '>
+              <a href="https://www.linkedin.com/in/g1kumarr/"  target='_blank'>
                 <FaLinkedin className="text-3xl hover:text-primary"/>
               </a>
-              <a href="https://www.facebook.com/g1kumar.in/">
+              <a href="https://www.facebook.com/g1kumar.in/" target='_blank'>
                 <FaFacebook className="text-3xl hover:text-primary"/>
               </a>
-              <a href="mailto:g1kumar215@gmail.com">
+              <a href="mailto:g1kumar215@gmail.com" target='_blank'>
                 <FaMailBulk className="text-3xl hover:text-primary"/>
               </a>
             </div>
+          </div>
+          {/* Navlinks */}
+          <div className='grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10'>
+            <div>
+              <div>
+                <h1>Important Links</h1>
+                <ul>
+                  {
+                    FooterLinks.map(data=>{
+                      return(
+                        
+                          <li className='cursor-pointer hover:text-primary duration-300'>
+                            <a href={data.links} target="_blabk">{data.title}</a>
+                          </li>
+                        
+                      )
+                    })
+                  }
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
 
