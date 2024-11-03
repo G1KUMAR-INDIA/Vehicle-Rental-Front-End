@@ -1,13 +1,13 @@
 import React from 'react'
 import About from '../components/About/About'
 import Services from '../components/Services/Services'
-import CarList from '../components/CarList/CarList'
 import Testimonial from '../components/Testimonial/Testimonial'
 import AppStoreBanner from '../components/AppStoreBanner/AppStoreBanner'
 import Contact from '../components/Contact/Contact'
 import Hero from '../components/Hero/Hero'
 import AOS from 'aos'
 import "aos/dist/aos.css"
+import VehicleList from '../components/VehicleList/VehicleList'
 
 const Home = () => {
   React.useEffect(()=>{
@@ -24,7 +24,7 @@ const Home = () => {
       <Hero/>
       <About/>
       <Services/>
-      <CarList/>
+      <VehicleList/>
       <Testimonial/>
       <AppStoreBanner/>
       <Contact/>      

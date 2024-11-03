@@ -1,42 +1,45 @@
 import React from 'react'
 
-const CarListData =[
+const VehicleListData =[
     {
         id:1,
-        name:"BMW UX",
-        price:1000,
-        image: "https://shorturl.at/RUPbC",
-        aosDelay:"0"
+        name:"Honda Activa 6G",
+        price:400,
+        image: "https://shorturl.at/vXsO8",
+        aosDelay:"0",
+        movement:"fade-up"
     },
     {
         id:2,
         name:"KIA UX",
         price:1400,
         image: "https://shorturl.at/D4qX4",
-        aosDelay:"500"
+        aosDelay:"500",
+        movement:"fade-up"
     },
     {
         id:3,
         name:"BMW UX",
         price:1800,
         image: "https://shorturl.at/RUPbC",
-        aosDelay:"1000"
+        aosDelay:"1000",
+        movement:"zoom"
     }
 ]
-const CarList = () => {
+const VehicleList = () => {
   return (
-    <div className='dark:bg-dark bg-white dark:text-white pb-24 pt-12'>
+    <div className='dark:bg-dark bg-gray-50 dark:text-white pb-24 pt-12'>
       <div className="container">
         {/* heading */}
-        <h1 className='teaxt-3xl sm:text-4xl font-semibold font-serif mb-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ut, quae a nobis incidunt dolorem? Officia perspiciatis ex aut inventore laborum tempora dolorem expedita. Vitae enim tempore praesentium voluptas sapiente.</h1>
-        <p data-aos="fade-up" className='text-sm pb-10'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque ad maiores reprehenderit beatae quaerat quia vel corrupti. Minima animi velit, voluptate similique illo vitae enim ipsa, quae error quisquam optio.</p>
+        <h1 className='teaxt-3xl text-[#DD89B5] sm:text-4xl font-semibold font-serif mb-3'>Rent Your Ride</h1>
+        <p data-aos="fade-up" className='text-[#3F438F] text-sm pb-10'><small>Discover the freedom of flexible, affordable vehicle rentals! Whether you’re exploring new places or need a reliable ride for daily commutes, we offer a range of options to suit your needs. With competitive prices, quick booking, and a commitment to safety with our experienced drivers, every journey is made easy. Choose Rent Your Ride for the best travel experience—convenient, safe, and budget-friendly. Book now and get on the road with confidence!</small></p>
         {/* Car Display Cards */}
         <div>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16'>
                 {
-                    CarListData.map((data)=>{
+                    VehicleListData.map((data)=>{
                         return (
-                        <div key={data.id} data-aos="fade-up" data-aos-delay={data.aosDelay}  className='space-y-3 border-2 border-gray-300 hover:border-primary p-3 rounded-xl relative group'>
+                        <div key={data.id} data-aos={data.movement} data-aos-delay={data.aosDelay}  className='space-y-3 border-2 border-gray-300 hover:border-primary p-3 rounded-xl relative group'>
                             <div className='w-full h-[120px]'>
                                 <img className='w-[250px] h-[120px] object-contain sm:translate-x-8 group-hover:translate-x-16 duration-700' src={data.image} alt="" />
                             </div>
@@ -64,4 +67,4 @@ const CarList = () => {
   )
 }
 
-export default CarList
+export default VehicleList

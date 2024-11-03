@@ -10,7 +10,7 @@ const skillData=[
             <FaCameraRetro className="text-5xl text-primary group-hover:text-black duration-300"/>
         ),
         link:"#",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officiis voluptatum omnis adipisci suscipit ullam rerum beatae numquam quaerat accusamus ab unde, voluptas earum? Nemo nostrum quia voluptatem soluta est!",
+        description: "Drive more, pay less! 🚗 Get unbeatable prices on vehicle rentals, perfect for any budget. No hidden fees, just clear, affordable rates for your travel needs. Book with us and save big on your next adventure!",
         aosDelay:"0",
     },
     {
@@ -19,7 +19,7 @@ const skillData=[
             <GiNotebook className="text-5xl text-primary group-hover:text-black duration-300"/>
         ),
         link:"#",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officiis voluptatum omnis adipisci suscipit ullam rerum beatae numquam quaerat accusamus ab unde, voluptas earum? Nemo nostrum quia voluptatem soluta est!",
+        description: "Need a ride in a flash? 🚕 With our quick booking and seamless rental process, you’ll be on the road in no time! Say goodbye to long waits—rent a vehicle with us for a fast, hassle-free experience. Book now and hit the road faster!",
         aosDelay:"500",
     },
     {
@@ -28,13 +28,13 @@ const skillData=[
             <SlNote className="text-5xl text-primary group-hover:text-black duration-300"/>
         ),
         link:"#",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officiis voluptatum omnis adipisci suscipit ullam rerum beatae numquam quaerat accusamus ab unde, voluptas earum? Nemo nostrum quia voluptatem soluta est!",
+        description: "Your safety is our priority! 🚙 Our rentals come with skilled, experienced drivers who ensure a safe, comfortable ride every time. Travel with peace of mind and let our professionals handle the road. Reserve your ride for a safe, smooth journey!",
         aosDelay:"1000",
     },
 ]
 const Services = () => {
   return (
-    <div className='py-14 dark:bg-black dark:text-white sm:min-h[600px] sm:grid sm:place-items-center'>
+    <div className='py-14 dark:bg-black bg-slate-50 dark:text-white sm:min-h[600px] sm:grid sm:place-items-center'>
         <div className=''>
             <div className='container'>
                 <div className='pb-12'>

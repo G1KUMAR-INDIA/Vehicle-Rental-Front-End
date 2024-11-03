@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div    >
+    <div className='bg-slate-50'>
         <div className='container'>
             <div className='grid grid-cols-1 sm:grid-cols-2 place-items-center'>
                 <div data-aos="slide-right" data-aos-duration="1500" data-aos-once="false">
@@ -11,9 +11,9 @@ const About = () => {
                 </div>
                 <div>
                     <div className='space-y-5 sm:p-16 pb-6'>
-                        <h1 className='text-4xl sm:text-3xl font-serif'>About Us</h1>
-                        <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sunt temporibus ex possimus at provident repudiandae. Aspernatur iusto doloremque temporibus obcaecati aut atque, placeat ex accusamus provident sed, debitis cupiditate.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint praesentium laboriosam assumenda necessitatibus veniam perferendis corporis incidunt excepturi quisquam harum aliquid alias sed quos, distinctio voluptatem quam quasi ut culpa.</p>
+                        <h1 className='text-4xl text-[#474604] sm:text-3xl font-serif'>Explore your city with ease!</h1>
+                        <p className='text-[]'>🚲 Rent a two-wheeler at affordable rates and enjoy hassle-free rides.</p>
+                        <p className='text-[]'>No long-term commitments, just smooth and convenient travel whenever you need it. Book now and ride away in style!</p>
                         <button className='button-outline'>Get Started</button>
                     </div>
                 </div>
