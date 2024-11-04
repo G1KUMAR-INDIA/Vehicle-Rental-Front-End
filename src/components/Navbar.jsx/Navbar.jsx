@@ -1,15 +1,41 @@
 import React,{useState,useEffect} from 'react'
 import { BiSolidSun } from "react-icons/bi";
 import { BiSolidMoon } from "react-icons/bi";
+import ResponsiveMenu from './ResponsiveMenu';
+import { HiMenuAlt1, HiMenuAlt3 } from 'react-icons/hi';
+export const NavLinks=[
+  {
+    id:1,
+    name:"Home",
+    link:"/#",
+  },
+  {
+    id:2,
+    name:"Vehicles",
+    link:"/#",
+  },
+  {
+    id:3,
+    name:"About",
+    link:"/#about",
+  },
+  {
+    id:4,
+    name:"Bookings",
+    link:"/#bookings",
+  },
+  {
+    id:5,
+    name:"Login",
+    link:"/#login",
+  },
+]
 const Navbar = () => {
-    const [darkMode, setDarkMode] = useState(false);
-    useEffect(() => {
-        if (darkMode) {
-          document.documentElement.classList.add('dark');
-        } else {
-          document.documentElement.classList.remove('dark');
-        }
-      }, [darkMode]);
+    const [showMenu,setShowMenu]=useState(false)
+
+    const togglemenu=()=>{
+      setShowMenu(!showMenu)
+    }
   return (
     <nav className='shadow-md bg-blue-500 dark:bg-dark dark:text-red-500 duration-300 relative z-40'>
       <div className="container py-2 md:py-0">
@@ -26,12 +52,19 @@ const Navbar = () => {
                         <li href="/login" className='text-red-500 py-3 hover:border-b-2 hover:border hover:text-white transition-colors duration-500 text-lg font-medium'>LOGIN</li>
                     </ol>
             </div>
-            <div className='flex'>
-                <BiSolidSun className='text-2xl'/>
-                <BiSolidMoon className='text-2xl'/>
+            <div className='flex items-center gap-4 md:hidden'>
+              <div className='flex'>
+                  <BiSolidSun className='text-2xl'/>
+                  <BiSolidMoon className='text-2xl'/>
+              </div>
+              {
+                showMenu?(<HiMenuAlt1 onClick={togglemenu} size={30} className="cursor-position transition-all"/>):(<HiMenuAlt3 onClick={togglemenu} size={30} className="cursor-position transition-all"/>)
+              }
             </div>
+            
         </div>
       </div>
+      <ResponsiveMenu showMenu={showMenu}/>
     </nav>
   )
 }
