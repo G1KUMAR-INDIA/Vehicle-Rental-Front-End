@@ -28,24 +28,24 @@ const FooterLinks=[
 ]
 const Footer = () => {
   return (
-    <div className='bg-gray-100 dark:bg-dark mt-14 rounded-t-3xl'>
+    <div className='bg-gray-500  dark:bg-dark'>
       <div className='container'>
         <div className='grid md:grid-cols-3 py-5'>
           {/* Company Details */}
           <div className='py-8 px-4'>
-            <h1 className='text-xl sm:text-3xl font-bold sm:text-left text-justify mb-3'>Vehicle Rental</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur a, doloremque porro deserunt explicabo earum assumenda, sapiente accusamus dolorem odit magni, sit delectus aliquid inventore aspernatur est. Praesentium, eaque inventore.</p>
+            <h1 className='text-[#F8607F] text-xl sm:text-3xl font-bold sm:text-left text-justify mb-3'>Vehicle Rental</h1>
+            <p className='text-[#8EF120]'>Need a ride? 🚗 Quick, easy, and affordable vehicle rentals for any journey. Book now and hit the road with confidence!</p>
             <br />
-            <div className='flex items-center gap-3'>
+            <div className='text-white flex items-center gap-3'>
               <FaLocationArrow />
               <p>Palamner, Chittoor District, Andhra Pradesh</p>
             </div>
-            <div className='flex items-center gap-3'>
+            <div className='flex items-center text-white gap-3'>
               <FaMobile />
               <p>+918501891921</p>              
             </div>
             {/* Social Handles */}
-            <div className='flex items-center  mt-6 '>
+            <div className='flex items-center text-[#E46620] mt-6 '>
               <a href="https://www.linkedin.com/in/g1kumarr/"  target='_blank'>
                 <FaLinkedin className="text-3xl hover:text-primary"/>
               </a>
@@ -67,11 +67,9 @@ const Footer = () => {
                   {
                     FooterLinks.map(data=>{
                       return(
-                        
                           <li key={data.title} className='cursor-pointer hover:text-primary duration-300'>
                             <a href={data.links} target="_blabk"><span className='mr-2'>&#11162;</span>{data.title}</a>
                           </li>
-                        
                       )
                     })
                   }

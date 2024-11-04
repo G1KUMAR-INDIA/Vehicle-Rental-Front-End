@@ -7,7 +7,8 @@ const About = () => {
             <div className='grid grid-cols-1 sm:grid-cols-2 place-items-center'>
                 <div data-aos="slide-right" data-aos-duration="1500" data-aos-once="false">
                     {/* <img className='sm:scale-105 sm:-translate-x-11 max-h-[300px] dsm:scale-125 drop-shadow-[2px_10px_6px_rgba(0,0,0,0.50)' src="https://shorturl.at/qolkD" alt="About Us" /> */}
-                    <img className='sm:scale-105 sm:-translate-x-11 max-h-[300px] dsm:scale-125 drop-shadow-[2px_10px_6px_rgba(0,0,0,0.50)' src="https://shorturl.at/8x9We" alt="About Us" />
+                    {/* <img className='sm:scale-105 sm:-translate-x-11 max-h-[300px] dsm:scale-125 drop-shadow-[2px_10px_6px_rgba(0,0,0,0.50)' src="https://shorturl.at/8x9We" alt="About Us" /> */}
+                    <img className='bg-gray-50 sm:scale-105 sm:-translate-x-11 max-h-[300px] dsm:scale-125 drop-shadow-[2px_10px_6px_rgba(0,0,0,0.50)' src="https://shorturl.at/ikWN3" alt="About Us" />
                 </div>
                 <div>
                     <div className='space-y-5 sm:p-16 pb-6'>

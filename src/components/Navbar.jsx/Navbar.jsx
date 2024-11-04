@@ -11,19 +11,19 @@ const Navbar = () => {
         }
       }, [darkMode]);
   return (
-    <nav className='shadow-md bg-[#9DDC87] dark:bg-dark dark:text-white duration-300 relative z-40'>
-      <div className="container">
+    <nav className='shadow-md bg-blue-500 dark:bg-dark dark:text-red-500 duration-300 relative z-40'>
+      <div className="container py-2 md:py-0">
         <div className="flex justify-between items-center">
             <div>
-                <h1 className='text-3xl text-[#E37E3A] font-bold font-serif'>Vehicle Rental</h1>
+                <h1 className='text-3xl text-white font-bold font-serif'>Vehicle Rental</h1>
             </div>
             <div className='hidden md:block ju'>
                     <ol className="flex items-center gap-6">
-                        <li href="/home" className='text-[#2C628C] py-3 hover:border-b-2 hover:border hover:text-primary transition-colors duration-500 text-lg font-medium'>HOME</li>
-                        <li href="/about" className='text-[#2C628C] py-3 hover:border-b-2 hover:border hover:text-primary transition-colors duration-500 text-lg font-medium'>ABOUT</li>
-                        <li href="/Vehicles" className='text-[#2C628C] py-3 hover:border-b-2 hover:border hover:text-primary transition-colors duration-500 text-lg font-medium'>VEHICLES</li>
-                        <li href="/bookings" className='text-[#2C628C] py-3 hover:border-b-2 hover:border hover:text-primary transition-colors duration-500 text-lg font-medium'>BOOKINGS</li>
-                        <li href="/login" className='text-[#2C628C] py-3 hover:border-b-2 hover:border hover:text-primary transition-colors duration-500 text-lg font-medium'>LOGIN</li>
+                        <li href="/home" className='text-red-500 py-3 hover:border-b-2 hover:border hover:text-white transition-colors duration-500 text-lg font-medium'>HOME</li>
+                        <li href="/about" className='text-red-500 py-3 hover:border-b-2 hover:border hover:text-white transition-colors duration-500 text-lg font-medium'>ABOUT</li>
+                        <li href="/Vehicles" className='text-red-500 py-3 hover:border-b-2 hover:border hover:text-white transition-colors duration-500 text-lg font-medium'>VEHICLES</li>
+                        <li href="/bookings" className='text-red-500 py-3 hover:border-b-2 hover:border hover:text-white transition-colors duration-500 text-lg font-medium'>BOOKINGS</li>
+                        <li href="/login" className='text-red-500 py-3 hover:border-b-2 hover:border hover:text-white transition-colors duration-500 text-lg font-medium'>LOGIN</li>
                     </ol>
             </div>
             <div className='flex'>
